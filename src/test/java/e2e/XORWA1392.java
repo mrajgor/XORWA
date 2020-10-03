@@ -2,7 +2,10 @@ package e2e;
 
 import Login.AdminLogin;
 import com.crossover.xorwa.project.CSACandidateCreatedSuccessfully;
+<<<<<<< HEAD
 import com.crossover.xorwa.project.CSACandidateRecieveCrashCourseEmail;
+=======
+>>>>>>> Initial commit
 import org.testng.annotations.Test;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
@@ -32,7 +35,11 @@ public class XORWA1392 extends AdminLogin {
         // System.out.println("Valid Assessment Type Selected");
         csaCandidateCreatedSuccessfully.setFirstnameField("TestFirstName1");
         csaCandidateCreatedSuccessfully.setLastnameField("TestLastName2");
+<<<<<<< HEAD
         csaCandidateCreatedSuccessfully.setEmailField("test@gmail.com");
+=======
+        csaCandidateCreatedSuccessfully.setEmailField("monali.rajgor@crossover.com");
+>>>>>>> Initial commit
         csaCandidateCreatedSuccessfully.setOrderidField("orderid");
         csaCandidateCreatedSuccessfully.setCountryField("TR");
         csaCandidateCreatedSuccessfully.clickCreateCandidateButton();
@@ -42,7 +49,14 @@ public class XORWA1392 extends AdminLogin {
         csaCandidateCreatedSuccessfully.clickCandidateEntryDashboard();
         sleep(3000);
 
+<<<<<<< HEAD
         try {
+=======
+        csaCandidateCreatedSuccessfully.clickRefreshButton();
+        sleep(3000);
+
+       try {
+>>>>>>> Initial commit
 
             TimeUnit.MINUTES.sleep(30);
 
@@ -51,7 +65,15 @@ public class XORWA1392 extends AdminLogin {
             //Handle exception
 
         }
+<<<<<<< HEAD
         CSACandidateRecieveCrashCourseEmail csaCandidateRecieveCrashCourseEmail;
+=======
+        csaCandidateRecieveCrashCourseEmail.candidateReceivedCrashCourseEmail();
+        sleep(3000);
+        System.out.println("Candidate inbox opened");
+
+        csaCandidateRecieveCrashCourseEmail.openFirstUnreadEmail();
+>>>>>>> Initial commit
         sleep(3000);
         System.out.println("Candidate has received Crash-Course email");
     }

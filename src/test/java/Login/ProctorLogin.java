@@ -10,8 +10,13 @@ public class ProctorLogin extends BaseTests{
 
         @Test
         public void proctorSuccessfullyLogin() throws InterruptedException {
+<<<<<<< HEAD
             csaAdminLogin.setUsername("test");
             csaAdminLogin.setPassword("test@123");
+=======
+            csaAdminLogin.setUsername("superuser");
+            csaAdminLogin.setPassword("Re@lworkPC@2020");
+>>>>>>> Initial commit
             CSAAdminDashboard csaAdminDashboard = csaAdminLogin.clickLoginButton();
             sleep(2000);
             assertEquals(csaAdminDashboard.getAlertText(),

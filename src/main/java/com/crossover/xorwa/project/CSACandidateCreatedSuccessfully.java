@@ -19,6 +19,11 @@ public class CSACandidateCreatedSuccessfully extends CSAAdminCreateCandidate{
     private By countryField = By.name("country");
     private By createButton = By.xpath("/html/body/div/div/div/div/div/div/div/div/form/div[7]/div[1]/div/button");
     public By clickCandidateEntry = By.xpath("/html/body/div/div/div/div[2]/div/div/div[1]/table/tbody[2]/tr[1]");
+<<<<<<< HEAD
+=======
+    public By refresh = By.xpath("/html/body/div/div/div/div[1]/div[9]/button");
+
+>>>>>>> Initial commit
     private int orderid;
 
     public CSACandidateCreatedSuccessfully(WebDriver driver) {
@@ -72,4 +77,12 @@ public class CSACandidateCreatedSuccessfully extends CSAAdminCreateCandidate{
         return new CSACandidateCreatedSuccessfully(driver);
     }
 
+<<<<<<< HEAD
+=======
+    public CSACandidateCreatedSuccessfully clickRefreshButton(){
+        driver.findElement(refresh).click();
+        return new CSACandidateCreatedSuccessfully(driver);
+    }
+
+>>>>>>> Initial commit
 }

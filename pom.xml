@@ -58,6 +58,15 @@
             <version>2.21</version>
         </dependency>
 
+<<<<<<< HEAD
+=======
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-json</artifactId>
+            <version>4.0.0-alpha-6</version>
+        </dependency>
+
+>>>>>>> Initial commit
     </dependencies>
 
 

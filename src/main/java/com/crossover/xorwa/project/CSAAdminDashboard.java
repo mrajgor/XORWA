@@ -12,11 +12,19 @@ public class CSAAdminDashboard {
     private By statusAlert = By.xpath("//div[@class='col-md-4']/h2");
     private By statusColumn = By.xpath("//*[@id=\"root\"]/div/div/div[2]/div/div/div[1]/table/tbody[2]/tr[1]/td[8]/span");
     private By clickCandidateEntryFromdashboard = By.xpath("/html/body/div/div/div/div[2]/div/div/div[1]/table/tbody[2]/tr[1]");
+<<<<<<< HEAD
     private By practiceAssessment = By.xpath("//*[@id=\"root\"]/div/div/div[2]/div/div/div[1]/table/tbody[2]/tr[2]/td/div/div/div/div/div[1]/div/div/div[6]/div[2]");
     private By realWorkAssessment = By.xpath("//*[@id=\"root\"]/div/div/div[2]/div/div/div[1]/table/tbody[2]/tr[2]/td/div/div/div/div/div[1]/div/div/div[7]/div[2]");
     private By deleteUser = By.xpath("//*[@id=\"root\"]/div/div/div[2]/div/div/div[1]/table/tbody[2]/tr[2]/td/div/div/div/div/div[1]/div/div/div[8]/div[2]/div/div/div[2]/button");
     private By statusPracticeAssessment = By.className("card-body");
     private By statusRealWorkAssessment = By.xpath("//*[@id=\"root\"]/div/div/div[2]/div/div/p");
+=======
+    private By practiceAssessment = By.xpath("//*[@id=\"root\"]/div/div/div[2]/div/div/div[1]/table/tbody[2]/tr[2]/td/div/div/div/div/div[1]/div/div/div[5]/div[2]/a");
+    private By realWorkAssessment = By.xpath("//*[@id=\"root\"]/div/div/div[2]/div/div/div[1]/table/tbody[2]/tr[2]/td/div/div/div/div/div[1]/div/div/div[6]/div[2]/a");
+    private By deleteUser = By.xpath("/html/body/div/div/div/div[2]/div/div/div[1]/table/tbody[2]/tr[2]/td/div/div/div/div/div[1]/div/div/div[7]/div[2]/div/div/div[3]/button");
+    private By statusPracticeAssessment = By.xpath("/html/body/div/div/div/div[2]/div/div");
+    private By statusRealWorkAssessment = By.xpath("/html/body/div/div/div/div[2]/div/div");
+>>>>>>> Initial commit
     private By clickFilterButton = By.xpath("/html/body/div/div/div/div[2]/div/div/div[1]/table/tbody/tr/th[7]/div/button");
     private By getStatusFilterPopup = By.xpath("//*[@id=\"contained-modal-title-vcenter\"]");
     private By clickFilterStatus = By.xpath("/html/body/div[3]/div/div/div[2]/div/div/div[2]/div[2]");
@@ -96,7 +104,11 @@ public class CSAAdminDashboard {
 
     public void closeAssessmentLink(){
         Set<String> handlesSet = driver.getWindowHandles();
+<<<<<<< HEAD
         List<String> handlesList = new ArrayList<String>(handlesSet);
+=======
+        List<String> handlesList = new ArrayList<String>( handlesSet);
+>>>>>>> Initial commit
         driver.switchTo().window(handlesList.get(1));
         driver.close();
         driver.switchTo().window(handlesList.get(0));

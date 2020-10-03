@@ -11,10 +11,17 @@ public class XORWA1390 extends AdminLogin {
 
     @Test
     public void XORWA1390() throws InterruptedException {
+<<<<<<< HEAD
         /*String csaCandidateCreatedSuccessfully = csaAdminDashboard.getEC2Status();
         sleep(2000);
         assertEquals(csaAdminDashboard.getEC2Status(),
                 "ACTIVE", //PROVISIONED
+=======
+        String csaCandidateCreatedSuccessfully = csaAdminDashboard.getEC2Status();
+        sleep(5000);
+        assertEquals(csaAdminDashboard.getEC2Status(),
+                "PROVISIONED",
+>>>>>>> Initial commit
                 "Candidate EC2 instance does not provisioned");
         System.out.println("Candidate EC2 instance PROVISIONED successfully");
 
@@ -38,7 +45,11 @@ public class XORWA1390 extends AdminLogin {
         sleep(5000);
 
         csaAdminDashboard.clickDeleteUserButton();
+<<<<<<< HEAD
         sleep(5000);*/
+=======
+        sleep(5000);
+>>>>>>> Initial commit
 
         csaAdminDashboard.clickFilterStatusButton();
         sleep(2000);
@@ -59,7 +70,11 @@ public class XORWA1390 extends AdminLogin {
         System.out.println("Candidate EC2 instance Deleted successfully");
 
         csaAdminDashboard.clickCandidateEntry();
+<<<<<<< HEAD
         sleep(2000);
+=======
+        sleep(5000);
+>>>>>>> Initial commit
 
         csaAdminDashboard.clickPracticeAssessment();
         System.out.println("Candidate Practice Assessment page should open");

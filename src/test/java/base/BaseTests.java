@@ -13,6 +13,19 @@ public class BaseTests {
     protected CSAAdminCreateCandidate csaAdminCreateCandidate;
     protected CSACandidateCreatedSuccessfully csaCandidateCreatedSuccessfully;
     protected CSACandidateRecieveCrashCourseEmail csaCandidateRecieveCrashCourseEmail;
+<<<<<<< HEAD
+=======
+    protected BulkDeleteCandidateEntries bulkDeleteCandidateEntries;
+    protected CSAProctorViewDashboard csaProctorViewDashboard;
+    protected CSAAdminDashboardCountries csaAdminDashboardCountries;
+    protected CSAWorkspacesView csaWorkspacesView;
+    protected CSAJobsHistoryView csaJobsHistoryView;
+    protected CSAEC2UsageView csaec2UsageView;
+    protected CSAAdminDashboardShowDuplicateEmails csaAdminDashboardShowDuplicateEmails;
+    protected CSAAdminFilterCandidateDetails csaAdminFilterCandidateDetails;
+    protected CSAAdminDashboardPagingandSorting csaAdminDashboardPagingandSorting;
+    protected CSACandidateRDPInstance csaCandidateRDPInstance;
+>>>>>>> Initial commit
 
     @BeforeClass
     public void setUp(){
@@ -27,9 +40,22 @@ public class BaseTests {
         csaAdminCreateCandidate = new CSAAdminCreateCandidate(driver);
         csaCandidateCreatedSuccessfully = new CSACandidateCreatedSuccessfully(driver);
         csaCandidateRecieveCrashCourseEmail = new CSACandidateRecieveCrashCourseEmail(driver);
+<<<<<<< HEAD
 
 
 
+=======
+        bulkDeleteCandidateEntries = new BulkDeleteCandidateEntries(driver);
+        csaProctorViewDashboard = new CSAProctorViewDashboard(driver);
+        csaAdminDashboardCountries = new CSAAdminDashboardCountries(driver);
+        csaWorkspacesView = new CSAWorkspacesView(driver);
+        csaJobsHistoryView = new CSAJobsHistoryView(driver);
+        csaec2UsageView = new CSAEC2UsageView(driver);
+        csaAdminDashboardShowDuplicateEmails = new CSAAdminDashboardShowDuplicateEmails(driver);
+        csaAdminFilterCandidateDetails = new CSAAdminFilterCandidateDetails(driver);
+        csaAdminDashboardPagingandSorting = new CSAAdminDashboardPagingandSorting(driver);
+        csaCandidateRDPInstance = new CSACandidateRDPInstance(driver);
+>>>>>>> Initial commit
     }
 
     @AfterClass

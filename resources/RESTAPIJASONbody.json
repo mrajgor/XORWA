@@ -1,0 +1,12 @@
+{
+  "test_id": "mqa_assessment_v1",
+  "order_id": "{{$timestamp}}",
+  "callback_url": "https://xo.secure.force.com/services/apexrest/assessments/v1/mqa_assessment_v1/{{$timestamp}}",
+  "candidate":
+  {
+    "first_name": "Monali",
+    "last_name": "Rajgor",
+    "email": "monali.rajgor@aurea.com",
+    "country": "us"
+  }
+}
