@@ -15,10 +15,10 @@ public class CSACandidateRecieveCrashCourseEmail {
 
         driver.get("https://accounts.google.com/ServiceLogin/identifier?service=mail&flowName=GlifWebSignIn&flowEntry=AddSession");
 
-        driver.findElement(By.id("identifierId")).sendKeys("monali.rajgor@aurea.com");
+        driver.findElement(By.id("identifierId")).sendKeys("test@gmail.com");
         driver.findElement(By.className("VfPpkd-RLmnJb")).click();
         Thread.sleep(3000);
-        driver.findElement(By.xpath("//*[@id=\"password\"]/div[1]/div/div[1]/input")).sendKeys("aurea@1103");
+        driver.findElement(By.xpath("//*[@id=\"password\"]/div[1]/div/div[1]/input")).sendKeys("test1234");
         Thread.sleep(3000);
         driver.findElement(By.className("VfPpkd-RLmnJb")).click();
         System.out.println("Title of Page: " + driver.getCurrentUrl());
