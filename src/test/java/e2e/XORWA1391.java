@@ -34,7 +34,7 @@ public class XORWA1391 extends AdminLogin {
            // System.out.println("Valid Assessment Type Selected");
             csaCandidateCreatedSuccessfully.setFirstnameField("TestFirstName1");
             csaCandidateCreatedSuccessfully.setLastnameField("TestLastName2");
-            csaCandidateCreatedSuccessfully.setEmailField("monali.rajgor@aurea.com");
+            csaCandidateCreatedSuccessfully.setEmailField("test@gmail.com");
             csaCandidateCreatedSuccessfully.setOrderidField("orderid");
             csaCandidateCreatedSuccessfully.setCountryField("TR");
             csaCandidateCreatedSuccessfully.clickCreateCandidateButton();
