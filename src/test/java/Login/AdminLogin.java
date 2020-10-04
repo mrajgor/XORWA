@@ -10,8 +10,8 @@ public class AdminLogin extends BaseTests {
 
     @Test
     public void adminSuccessfullyLogin() throws InterruptedException {
-        csaAdminLogin.setUsername("mrajgor");
-        csaAdminLogin.setPassword("Devfactory$704");
+        csaAdminLogin.setUsername("test");
+        csaAdminLogin.setPassword("test@123");
         CSAAdminDashboard csaAdminDashboard = csaAdminLogin.clickLoginButton();
         sleep(2000);
             assertEquals(csaAdminDashboard.getAlertText(),
