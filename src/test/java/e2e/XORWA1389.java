@@ -18,9 +18,9 @@ public class XORWA1389 {
             "  \"callback_url\": \"https://xo.secure.force.com/services/apexrest/assessments/v1/mqa_assessment_v1/mqa_Aug31_1748\",\n" +
             "  \"candidate\": \n" +
             "  { \n" +
-            "    \"first_name\": \"Monali\",\n" +
-            "    \"last_name\": \"Rajgor\",\n" +
-            "    \"email\": \"monali.rajgor@aurea.com\",\n" +
+            "    \"first_name\": \"test\",\n" +
+            "    \"last_name\": \"name\",\n" +
+            "    \"email\": \"test@gmail.com\",\n" +
             "    \"country\": \"us\"\n" +
             "  }\n" +
             "  }";
@@ -39,7 +39,7 @@ public class XORWA1389 {
                 given()
                     .auth()
                     .preemptive()
-                    .basic("crossover", "re@lworkcro$$over20")
+                    .basic("test", "test")
                     .header("Accept", ContentType.JSON.getAcceptHeader())
                     .contentType(ContentType.JSON).
                 when()
