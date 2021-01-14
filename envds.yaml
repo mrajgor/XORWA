@@ -1,0 +1,27 @@
+environments:
+  - name: Staging
+    type: QA
+    description: Staging deployment of the RWA Application
+    automated: false
+    endpoints:
+      - name: Admin Panel
+        description: RWA Admin Panel
+        type: http
+        url: https://stage.csa-assessment.crossover.com/admin
+        credentialsId: admin_panel_credentials
+  - name: Production
+    type: QA
+    description: Production deployment of the RWA Application
+    automated: false
+    endpoints:
+      - name: Admin Panel
+        description: RWA Admin Panel
+        type: http
+        url: https://csa-assessment.crossover.com/admin
+        credentialsId: admin_panel_credentials
+ 
+credentials:
+  - name: admin_panel_credentials
+    type: basic
+    username: superuser
+    password: Re@lworkPC@2020
