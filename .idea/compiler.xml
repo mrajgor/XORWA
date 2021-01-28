@@ -9,6 +9,8 @@
         <module name="XORWA" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="11.0.8" />
+    <bytecodeTargetLevel target="11.0.8">
+      <module name="XORWA" target="8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
